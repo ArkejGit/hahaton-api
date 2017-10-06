@@ -34,6 +34,7 @@ Różnice w pathach:
 - `/me/games/` - MOJE gry otwarte i trwające
 
 a do `/games/` są jeszcze query params: `?status=finished` i `?status=active`
+a `/games/{id}/moves/` obsługuje `?after={move_id}`
 
 ## Board representation
 
