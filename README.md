@@ -25,12 +25,12 @@ axios({
 ```
 
 Available game statuses:
-`active` - trwa gra
-`finished`  - zakończyła się (remis, wygrana, poddanie)
-`waiting` - siedzi jeden gracz i czeka na przyjaciela, albo siedzi dwóch i czekają kto się odważy zrobić `start`
+- `active` - trwa gra
+- `finished`  - zakończyła się (remis, wygrana, poddanie)
+- `waiting` - siedzi jeden gracz i czeka na przyjaciela, albo siedzi dwóch i czekają kto się odważy zrobić `start`
 
-`/games/` - gry otwarte
-`/me/games/` - MOJE gry otwarte i trwające
+- `/games/` - gry otwarte
+- `/me/games/` - MOJE gry otwarte i trwające
 
 a do `/games/` są jeszcze query params: `?status=finished` i `?status=active`
 
