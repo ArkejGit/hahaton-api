@@ -1,12 +1,17 @@
 # HAHATON API SERVER
 
-## Setup app
-
-Create superuser for supervising.
-
-```bash
-python manage.py migrate
-python manage.py init
+example register request:
+```js
+fetch('https://hahaton.venturedevs.net/api/user/register/', { 
+  method: 'POST', 
+  mode: 'cors', 
+  credentials: 'include', 
+  body: JSON.stringify({ username: 'filip_jarno2', password: '123123'}),
+  headers: {
+    'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json'
+  },
+})
 ```
 
 ## Board representation
