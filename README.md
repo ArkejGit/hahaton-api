@@ -20,10 +20,6 @@ axios({
   url: 'https://hahaton.venturedevs.net/api/user/register/',
   crossdomain: true,
   data: { username: 'filip_jarno5', password: '123123'},
-  headers: {
-    'Accept': 'application/json, text/plain, */*',
-    'Content-Type': 'application/json'
-  }
 })
 ```
 
