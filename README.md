@@ -1,6 +1,6 @@
 # HAHATON API SERVER
 
-example register request:
+example register request using fetch:
 ```js
 fetch('https://hahaton.venturedevs.net/api/user/register/', { 
   method: 'POST', 
@@ -11,6 +11,19 @@ fetch('https://hahaton.venturedevs.net/api/user/register/', {
     'Accept': 'application/json, text/plain, */*',
     'Content-Type': 'application/json'
   },
+})
+```
+same example using axios:
+```js
+axios({
+  method: 'POST',
+  url: 'https://hahaton.venturedevs.net/api/user/register/',
+  crossdomain: true,
+  data: { username: 'filip_jarno5', password: '123123'},
+  headers: {
+    'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json'
+  }
 })
 ```
 
