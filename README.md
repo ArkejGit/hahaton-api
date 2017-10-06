@@ -19,9 +19,20 @@ axios({
   method: 'POST',
   url: 'https://hahaton.venturedevs.net/api/user/register/',
   crossdomain: true,
+  withCredentials: true,
   data: { username: 'filip_jarno5', password: '123123'},
 })
 ```
+
+Available game statuses:
+`active` - trwa gra
+`finished`  - zakończyła się (remis, wygrana, poddanie)
+`waiting` - siedzi jeden gracz i czeka na przyjaciela, albo siedzi dwóch i czekają kto się odważy zrobić `start`
+
+`/games/` - gry otwarte
+`/me/games/` - MOJE gry otwarte i trwające
+
+a do `/games/` są jeszcze query params: `?status=finished` i `?status=active`
 
 ## Board representation
 
